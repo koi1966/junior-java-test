@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "usr")
-public class User {
+public class User  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
@@ -21,6 +21,7 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     private List<Article> articles;
+
 
     private String name;
     private Integer age;

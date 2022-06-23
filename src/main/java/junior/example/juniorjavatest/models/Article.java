@@ -19,8 +19,9 @@ public class Article {
     private String text;
     private String color;
 
+
     @ManyToOne(optional = false)
     @JoinColumn(name = "user_id")
-    private User user;
+    private User  user;
 
 }
